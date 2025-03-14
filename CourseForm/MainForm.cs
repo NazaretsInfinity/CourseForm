@@ -109,7 +109,7 @@ namespace CourseForm
                 FormatComboBox.Text = book.Format;
                 BookBindingComboBox.Text = book.Binding;
                 PageNumeric.Value = Convert.ToDecimal(book.PageAmount);
-                ReleaseDatePicker.Value = book.Data;
+                ReleaseDatePicker.Value = (DateTime)book.Data;
                 PriceTextBox.Text = book.Price.ToString();
                 maskedTextBox1.Text = $"{book.Weight}";
             }
