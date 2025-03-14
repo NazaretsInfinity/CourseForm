@@ -47,9 +47,9 @@
             // 
             // ChoiceTextBox
             // 
-            this.ChoiceTextBox.Location = new System.Drawing.Point(142, 12);
+            this.ChoiceTextBox.Location = new System.Drawing.Point(164, 12);
             this.ChoiceTextBox.Name = "ChoiceTextBox";
-            this.ChoiceTextBox.Size = new System.Drawing.Size(223, 22);
+            this.ChoiceTextBox.Size = new System.Drawing.Size(201, 22);
             this.ChoiceTextBox.TabIndex = 1;
             this.ChoiceTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 

@@ -38,9 +38,23 @@
             this.TextBoxAuthor = new System.Windows.Forms.TextBox();
             this.TextBoxName = new System.Windows.Forms.TextBox();
             this.PersonalPage = new System.Windows.Forms.TabPage();
+            this.OwnBindingButton = new System.Windows.Forms.Button();
+            this.BookBindingComboBox = new System.Windows.Forms.ComboBox();
+            this.BindingLabel = new System.Windows.Forms.Label();
+            this.OwnFormatButton = new System.Windows.Forms.Button();
+            this.FormatComboBox = new System.Windows.Forms.ComboBox();
+            this.BookFormatLabel = new System.Windows.Forms.Label();
+            this.PageNumeric = new System.Windows.Forms.NumericUpDown();
+            this.PageAmountLabel = new System.Windows.Forms.Label();
             this.ColorLabel = new System.Windows.Forms.Label();
             this.ChooseColorButton = new System.Windows.Forms.Button();
             this.CustomPage = new System.Windows.Forms.TabPage();
+            this.PriceTextBox = new System.Windows.Forms.TextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.ReleaseDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.WeightLabel = new System.Windows.Forms.Label();
+            this.DateLabel = new System.Windows.Forms.Label();
+            this.PriceLabel = new System.Windows.Forms.Label();
             this.SaveButton = new System.Windows.Forms.Button();
             this.LoadButton = new System.Windows.Forms.Button();
             this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
@@ -51,26 +65,12 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PageAmountLabel = new System.Windows.Forms.Label();
-            this.PageNumeric = new System.Windows.Forms.NumericUpDown();
-            this.BookFormatLabel = new System.Windows.Forms.Label();
-            this.FormatComboBox = new System.Windows.Forms.ComboBox();
-            this.OwnFormatButton = new System.Windows.Forms.Button();
-            this.BindingLabel = new System.Windows.Forms.Label();
-            this.BookBindingComboBox = new System.Windows.Forms.ComboBox();
-            this.OwnBindingButton = new System.Windows.Forms.Button();
-            this.PriceLabel = new System.Windows.Forms.Label();
-            this.DateLabel = new System.Windows.Forms.Label();
-            this.WeightLabel = new System.Windows.Forms.Label();
-            this.ReleaseDatePicker = new System.Windows.Forms.DateTimePicker();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.PriceTextBox = new System.Windows.Forms.TextBox();
             this.TabControlBooks.SuspendLayout();
             this.GeneralPage.SuspendLayout();
             this.PersonalPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PageNumeric)).BeginInit();
             this.CustomPage.SuspendLayout();
             this.MainMenuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PageNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // TabControlBooks
@@ -84,7 +84,7 @@
             this.TabControlBooks.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TabControlBooks.Name = "TabControlBooks";
             this.TabControlBooks.SelectedIndex = 0;
-            this.TabControlBooks.Size = new System.Drawing.Size(482, 444);
+            this.TabControlBooks.Size = new System.Drawing.Size(484, 384);
             this.TabControlBooks.TabIndex = 0;
             // 
             // GeneralPage
@@ -100,7 +100,7 @@
             this.GeneralPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.GeneralPage.Name = "GeneralPage";
             this.GeneralPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.GeneralPage.Size = new System.Drawing.Size(474, 413);
+            this.GeneralPage.Size = new System.Drawing.Size(476, 353);
             this.GeneralPage.TabIndex = 0;
             this.GeneralPage.Text = "General";
             this.GeneralPage.UseVisualStyleBackColor = true;
@@ -108,7 +108,7 @@
             // GenreLabel
             // 
             this.GenreLabel.AutoSize = true;
-            this.GenreLabel.Location = new System.Drawing.Point(36, 111);
+            this.GenreLabel.Location = new System.Drawing.Point(29, 142);
             this.GenreLabel.Name = "GenreLabel";
             this.GenreLabel.Size = new System.Drawing.Size(59, 18);
             this.GenreLabel.TabIndex = 6;
@@ -117,7 +117,7 @@
             // AuthorLabel
             // 
             this.AuthorLabel.AutoSize = true;
-            this.AuthorLabel.Location = new System.Drawing.Point(36, 66);
+            this.AuthorLabel.Location = new System.Drawing.Point(27, 85);
             this.AuthorLabel.Name = "AuthorLabel";
             this.AuthorLabel.Size = new System.Drawing.Size(62, 18);
             this.AuthorLabel.TabIndex = 5;
@@ -135,7 +135,7 @@
             // PersonalGenreButton
             // 
             this.PersonalGenreButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PersonalGenreButton.Location = new System.Drawing.Point(126, 139);
+            this.PersonalGenreButton.Location = new System.Drawing.Point(126, 171);
             this.PersonalGenreButton.Name = "PersonalGenreButton";
             this.PersonalGenreButton.Size = new System.Drawing.Size(188, 26);
             this.PersonalGenreButton.TabIndex = 3;
@@ -145,7 +145,9 @@
             // 
             // ComboBoxGenre
             // 
+            this.ComboBoxGenre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxGenre.FormattingEnabled = true;
+            this.ComboBoxGenre.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ComboBoxGenre.Items.AddRange(new object[] {
             "novel",
             "detective",
@@ -156,14 +158,14 @@
             "comedy",
             "scince-fiction(sci-fi)",
             "historical novel "});
-            this.ComboBoxGenre.Location = new System.Drawing.Point(126, 107);
+            this.ComboBoxGenre.Location = new System.Drawing.Point(126, 139);
             this.ComboBoxGenre.Name = "ComboBoxGenre";
             this.ComboBoxGenre.Size = new System.Drawing.Size(188, 26);
             this.ComboBoxGenre.TabIndex = 2;
             // 
             // TextBoxAuthor
             // 
-            this.TextBoxAuthor.Location = new System.Drawing.Point(126, 63);
+            this.TextBoxAuthor.Location = new System.Drawing.Point(126, 82);
             this.TextBoxAuthor.Name = "TextBoxAuthor";
             this.TextBoxAuthor.Size = new System.Drawing.Size(188, 24);
             this.TextBoxAuthor.TabIndex = 1;
@@ -192,10 +194,102 @@
             this.PersonalPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PersonalPage.Name = "PersonalPage";
             this.PersonalPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.PersonalPage.Size = new System.Drawing.Size(474, 413);
+            this.PersonalPage.Size = new System.Drawing.Size(476, 353);
             this.PersonalPage.TabIndex = 1;
             this.PersonalPage.Text = "Personal";
             this.PersonalPage.UseVisualStyleBackColor = true;
+            // 
+            // OwnBindingButton
+            // 
+            this.OwnBindingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OwnBindingButton.Location = new System.Drawing.Point(134, 193);
+            this.OwnBindingButton.Name = "OwnBindingButton";
+            this.OwnBindingButton.Size = new System.Drawing.Size(133, 22);
+            this.OwnBindingButton.TabIndex = 9;
+            this.OwnBindingButton.Text = "cannot find";
+            this.OwnBindingButton.UseVisualStyleBackColor = true;
+            this.OwnBindingButton.Click += new System.EventHandler(this.OwnBindingButton_Click);
+            // 
+            // BookBindingComboBox
+            // 
+            this.BookBindingComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BookBindingComboBox.FormattingEnabled = true;
+            this.BookBindingComboBox.Items.AddRange(new object[] {
+            "Case bound",
+            "Board bound",
+            "Perfect bound",
+            "Saddle stitched",
+            "Coil binding",
+            "Wire-O"});
+            this.BookBindingComboBox.Location = new System.Drawing.Point(134, 159);
+            this.BookBindingComboBox.Name = "BookBindingComboBox";
+            this.BookBindingComboBox.Size = new System.Drawing.Size(133, 28);
+            this.BookBindingComboBox.TabIndex = 8;
+            // 
+            // BindingLabel
+            // 
+            this.BindingLabel.AutoSize = true;
+            this.BindingLabel.Location = new System.Drawing.Point(23, 163);
+            this.BindingLabel.Name = "BindingLabel";
+            this.BindingLabel.Size = new System.Drawing.Size(78, 20);
+            this.BindingLabel.TabIndex = 7;
+            this.BindingLabel.Text = "Binding:";
+            // 
+            // OwnFormatButton
+            // 
+            this.OwnFormatButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OwnFormatButton.Location = new System.Drawing.Point(134, 111);
+            this.OwnFormatButton.Name = "OwnFormatButton";
+            this.OwnFormatButton.Size = new System.Drawing.Size(133, 22);
+            this.OwnFormatButton.TabIndex = 6;
+            this.OwnFormatButton.Text = "cannot find";
+            this.OwnFormatButton.UseVisualStyleBackColor = true;
+            this.OwnFormatButton.Click += new System.EventHandler(this.OwnFormatButton_Click);
+            // 
+            // FormatComboBox
+            // 
+            this.FormatComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FormatComboBox.FormattingEnabled = true;
+            this.FormatComboBox.Items.AddRange(new object[] {
+            "A4 (20x29)",
+            "A5 (14x20)",
+            "A6 (10x14)",
+            "B5 (17x24)",
+            "Square(20x20)"});
+            this.FormatComboBox.Location = new System.Drawing.Point(134, 81);
+            this.FormatComboBox.Name = "FormatComboBox";
+            this.FormatComboBox.Size = new System.Drawing.Size(133, 28);
+            this.FormatComboBox.TabIndex = 5;
+            // 
+            // BookFormatLabel
+            // 
+            this.BookFormatLabel.AutoSize = true;
+            this.BookFormatLabel.Location = new System.Drawing.Point(23, 85);
+            this.BookFormatLabel.Name = "BookFormatLabel";
+            this.BookFormatLabel.Size = new System.Drawing.Size(80, 20);
+            this.BookFormatLabel.TabIndex = 4;
+            this.BookFormatLabel.Text = "Format: ";
+            // 
+            // PageNumeric
+            // 
+            this.PageNumeric.Location = new System.Drawing.Point(164, 259);
+            this.PageNumeric.Name = "PageNumeric";
+            this.PageNumeric.Size = new System.Drawing.Size(103, 27);
+            this.PageNumeric.TabIndex = 3;
+            this.PageNumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // PageAmountLabel
+            // 
+            this.PageAmountLabel.AutoSize = true;
+            this.PageAmountLabel.Location = new System.Drawing.Point(23, 262);
+            this.PageAmountLabel.Name = "PageAmountLabel";
+            this.PageAmountLabel.Size = new System.Drawing.Size(135, 20);
+            this.PageAmountLabel.TabIndex = 2;
+            this.PageAmountLabel.Text = "Page quantity: ";
             // 
             // ColorLabel
             // 
@@ -228,16 +322,68 @@
             this.CustomPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CustomPage.Name = "CustomPage";
             this.CustomPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.CustomPage.Size = new System.Drawing.Size(474, 413);
+            this.CustomPage.Size = new System.Drawing.Size(476, 353);
             this.CustomPage.TabIndex = 2;
             this.CustomPage.Text = "Custom";
             this.CustomPage.UseVisualStyleBackColor = true;
+            // 
+            // PriceTextBox
+            // 
+            this.PriceTextBox.Location = new System.Drawing.Point(119, 42);
+            this.PriceTextBox.Name = "PriceTextBox";
+            this.PriceTextBox.Size = new System.Drawing.Size(93, 24);
+            this.PriceTextBox.TabIndex = 7;
+            this.PriceTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PriceTextBox_KeyPress);
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(119, 111);
+            this.maskedTextBox1.Mask = "00,000 kg";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(93, 24);
+            this.maskedTextBox1.TabIndex = 6;
+            // 
+            // ReleaseDatePicker
+            // 
+            this.ReleaseDatePicker.CustomFormat = "yyyy";
+            this.ReleaseDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ReleaseDatePicker.Location = new System.Drawing.Point(119, 76);
+            this.ReleaseDatePicker.Name = "ReleaseDatePicker";
+            this.ReleaseDatePicker.Size = new System.Drawing.Size(68, 24);
+            this.ReleaseDatePicker.TabIndex = 3;
+            // 
+            // WeightLabel
+            // 
+            this.WeightLabel.AutoSize = true;
+            this.WeightLabel.Location = new System.Drawing.Point(36, 114);
+            this.WeightLabel.Name = "WeightLabel";
+            this.WeightLabel.Size = new System.Drawing.Size(60, 18);
+            this.WeightLabel.TabIndex = 2;
+            this.WeightLabel.Text = "Weight";
+            // 
+            // DateLabel
+            // 
+            this.DateLabel.AutoSize = true;
+            this.DateLabel.Location = new System.Drawing.Point(22, 78);
+            this.DateLabel.Name = "DateLabel";
+            this.DateLabel.Size = new System.Drawing.Size(88, 18);
+            this.DateLabel.TabIndex = 1;
+            this.DateLabel.Text = "Released: ";
+            // 
+            // PriceLabel
+            // 
+            this.PriceLabel.AutoSize = true;
+            this.PriceLabel.Location = new System.Drawing.Point(38, 42);
+            this.PriceLabel.Name = "PriceLabel";
+            this.PriceLabel.Size = new System.Drawing.Size(57, 18);
+            this.PriceLabel.TabIndex = 0;
+            this.PriceLabel.Text = "Price: ";
             // 
             // SaveButton
             // 
             this.SaveButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SaveButton.Location = new System.Drawing.Point(138, 515);
+            this.SaveButton.Location = new System.Drawing.Point(140, 459);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(115, 29);
@@ -250,7 +396,7 @@
             // 
             this.LoadButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.LoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoadButton.Location = new System.Drawing.Point(261, 515);
+            this.LoadButton.Location = new System.Drawing.Point(263, 459);
             this.LoadButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.LoadButton.Name = "LoadButton";
             this.LoadButton.Size = new System.Drawing.Size(115, 28);
@@ -267,7 +413,7 @@
             this.MainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MainMenuStrip.Name = "MainMenuStrip";
             this.MainMenuStrip.Padding = new System.Windows.Forms.Padding(10, 2, 0, 2);
-            this.MainMenuStrip.Size = new System.Drawing.Size(512, 30);
+            this.MainMenuStrip.Size = new System.Drawing.Size(512, 29);
             this.MainMenuStrip.TabIndex = 3;
             this.MainMenuStrip.Text = "menuStrip1";
             // 
@@ -280,7 +426,7 @@
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(48, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(48, 25);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // loadToolStripMenuItem
@@ -316,157 +462,14 @@
             // programToolStripMenuItem
             // 
             this.programToolStripMenuItem.Name = "programToolStripMenuItem";
-            this.programToolStripMenuItem.Size = new System.Drawing.Size(66, 26);
+            this.programToolStripMenuItem.Size = new System.Drawing.Size(66, 25);
             this.programToolStripMenuItem.Text = "About";
-            // 
-            // PageAmountLabel
-            // 
-            this.PageAmountLabel.AutoSize = true;
-            this.PageAmountLabel.Location = new System.Drawing.Point(23, 262);
-            this.PageAmountLabel.Name = "PageAmountLabel";
-            this.PageAmountLabel.Size = new System.Drawing.Size(135, 20);
-            this.PageAmountLabel.TabIndex = 2;
-            this.PageAmountLabel.Text = "Page quantity: ";
-            // 
-            // PageNumeric
-            // 
-            this.PageNumeric.Location = new System.Drawing.Point(164, 259);
-            this.PageNumeric.Name = "PageNumeric";
-            this.PageNumeric.Size = new System.Drawing.Size(103, 27);
-            this.PageNumeric.TabIndex = 3;
-            this.PageNumeric.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // BookFormatLabel
-            // 
-            this.BookFormatLabel.AutoSize = true;
-            this.BookFormatLabel.Location = new System.Drawing.Point(23, 85);
-            this.BookFormatLabel.Name = "BookFormatLabel";
-            this.BookFormatLabel.Size = new System.Drawing.Size(80, 20);
-            this.BookFormatLabel.TabIndex = 4;
-            this.BookFormatLabel.Text = "Format: ";
-            // 
-            // FormatComboBox
-            // 
-            this.FormatComboBox.FormattingEnabled = true;
-            this.FormatComboBox.Items.AddRange(new object[] {
-            "A4 (20x29)",
-            "A5 (14x20)",
-            "A6 (10x14)",
-            "B5 (17x24)",
-            "Square(20x20)"});
-            this.FormatComboBox.Location = new System.Drawing.Point(134, 81);
-            this.FormatComboBox.Name = "FormatComboBox";
-            this.FormatComboBox.Size = new System.Drawing.Size(133, 28);
-            this.FormatComboBox.TabIndex = 5;
-            // 
-            // OwnFormatButton
-            // 
-            this.OwnFormatButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.OwnFormatButton.Location = new System.Drawing.Point(134, 111);
-            this.OwnFormatButton.Name = "OwnFormatButton";
-            this.OwnFormatButton.Size = new System.Drawing.Size(133, 22);
-            this.OwnFormatButton.TabIndex = 6;
-            this.OwnFormatButton.Text = "cannot find";
-            this.OwnFormatButton.UseVisualStyleBackColor = true;
-            this.OwnFormatButton.Click += new System.EventHandler(this.OwnFormatButton_Click);
-            // 
-            // BindingLabel
-            // 
-            this.BindingLabel.AutoSize = true;
-            this.BindingLabel.Location = new System.Drawing.Point(23, 163);
-            this.BindingLabel.Name = "BindingLabel";
-            this.BindingLabel.Size = new System.Drawing.Size(78, 20);
-            this.BindingLabel.TabIndex = 7;
-            this.BindingLabel.Text = "Binding:";
-            // 
-            // BookBindingComboBox
-            // 
-            this.BookBindingComboBox.FormattingEnabled = true;
-            this.BookBindingComboBox.Items.AddRange(new object[] {
-            "Case bound",
-            "Board bound",
-            "Perfect bound",
-            "Saddle stitched",
-            "Coil binding",
-            "Wire-O"});
-            this.BookBindingComboBox.Location = new System.Drawing.Point(134, 159);
-            this.BookBindingComboBox.Name = "BookBindingComboBox";
-            this.BookBindingComboBox.Size = new System.Drawing.Size(133, 28);
-            this.BookBindingComboBox.TabIndex = 8;
-            // 
-            // OwnBindingButton
-            // 
-            this.OwnBindingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.OwnBindingButton.Location = new System.Drawing.Point(134, 193);
-            this.OwnBindingButton.Name = "OwnBindingButton";
-            this.OwnBindingButton.Size = new System.Drawing.Size(133, 22);
-            this.OwnBindingButton.TabIndex = 9;
-            this.OwnBindingButton.Text = "cannot find";
-            this.OwnBindingButton.UseVisualStyleBackColor = true;
-            this.OwnBindingButton.Click += new System.EventHandler(this.OwnBindingButton_Click);
-            // 
-            // PriceLabel
-            // 
-            this.PriceLabel.AutoSize = true;
-            this.PriceLabel.Location = new System.Drawing.Point(38, 42);
-            this.PriceLabel.Name = "PriceLabel";
-            this.PriceLabel.Size = new System.Drawing.Size(57, 18);
-            this.PriceLabel.TabIndex = 0;
-            this.PriceLabel.Text = "Price: ";
-            // 
-            // DateLabel
-            // 
-            this.DateLabel.AutoSize = true;
-            this.DateLabel.Location = new System.Drawing.Point(22, 78);
-            this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(88, 18);
-            this.DateLabel.TabIndex = 1;
-            this.DateLabel.Text = "Released: ";
-            // 
-            // WeightLabel
-            // 
-            this.WeightLabel.AutoSize = true;
-            this.WeightLabel.Location = new System.Drawing.Point(36, 114);
-            this.WeightLabel.Name = "WeightLabel";
-            this.WeightLabel.Size = new System.Drawing.Size(60, 18);
-            this.WeightLabel.TabIndex = 2;
-            this.WeightLabel.Text = "Weight";
-            // 
-            // ReleaseDatePicker
-            // 
-            this.ReleaseDatePicker.CustomFormat = "yyyy";
-            this.ReleaseDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ReleaseDatePicker.Location = new System.Drawing.Point(119, 76);
-            this.ReleaseDatePicker.Name = "ReleaseDatePicker";
-            this.ReleaseDatePicker.Size = new System.Drawing.Size(68, 24);
-            this.ReleaseDatePicker.TabIndex = 3;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(119, 111);
-            this.maskedTextBox1.Mask = "00,000 kg";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(93, 24);
-            this.maskedTextBox1.TabIndex = 6;
-            // 
-            // PriceTextBox
-            // 
-            this.PriceTextBox.Location = new System.Drawing.Point(119, 42);
-            this.PriceTextBox.Name = "PriceTextBox";
-            this.PriceTextBox.Size = new System.Drawing.Size(93, 24);
-            this.PriceTextBox.TabIndex = 7;
-            this.PriceTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PriceTextBox_KeyPress);
-     
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 561);
+            this.ClientSize = new System.Drawing.Size(512, 506);
             this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.TabControlBooks);
@@ -480,11 +483,11 @@
             this.GeneralPage.PerformLayout();
             this.PersonalPage.ResumeLayout(false);
             this.PersonalPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PageNumeric)).EndInit();
             this.CustomPage.ResumeLayout(false);
             this.CustomPage.PerformLayout();
             this.MainMenuStrip.ResumeLayout(false);
             this.MainMenuStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PageNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
