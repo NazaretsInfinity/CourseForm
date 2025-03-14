@@ -56,7 +56,9 @@
             // ChoiceLabel
             // 
             this.ChoiceLabel.AutoSize = true;
+            this.ChoiceLabel.BackColor = System.Drawing.Color.Transparent;
             this.ChoiceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ChoiceLabel.ForeColor = System.Drawing.Color.Black;
             this.ChoiceLabel.Location = new System.Drawing.Point(14, 11);
             this.ChoiceLabel.Name = "ChoiceLabel";
             this.ChoiceLabel.Size = new System.Drawing.Size(122, 25);
@@ -68,6 +70,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(384, 101);
             this.Controls.Add(this.ChoiceLabel);
             this.Controls.Add(this.ChoiceTextBox);
