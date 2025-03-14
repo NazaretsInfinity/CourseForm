@@ -84,7 +84,7 @@
             this.TabControlBooks.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TabControlBooks.Name = "TabControlBooks";
             this.TabControlBooks.SelectedIndex = 0;
-            this.TabControlBooks.Size = new System.Drawing.Size(482, 444);
+            this.TabControlBooks.Size = new System.Drawing.Size(482, 358);
             this.TabControlBooks.TabIndex = 0;
             // 
             // GeneralPage
@@ -100,7 +100,7 @@
             this.GeneralPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.GeneralPage.Name = "GeneralPage";
             this.GeneralPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.GeneralPage.Size = new System.Drawing.Size(474, 413);
+            this.GeneralPage.Size = new System.Drawing.Size(474, 327);
             this.GeneralPage.TabIndex = 0;
             this.GeneralPage.Text = "General";
             this.GeneralPage.UseVisualStyleBackColor = true;
@@ -108,27 +108,30 @@
             // GenreLabel
             // 
             this.GenreLabel.AutoSize = true;
-            this.GenreLabel.Location = new System.Drawing.Point(36, 111);
+            this.GenreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GenreLabel.Location = new System.Drawing.Point(36, 110);
             this.GenreLabel.Name = "GenreLabel";
-            this.GenreLabel.Size = new System.Drawing.Size(59, 18);
+            this.GenreLabel.Size = new System.Drawing.Size(71, 22);
             this.GenreLabel.TabIndex = 6;
             this.GenreLabel.Text = "Genre:";
             // 
             // AuthorLabel
             // 
             this.AuthorLabel.AutoSize = true;
-            this.AuthorLabel.Location = new System.Drawing.Point(36, 66);
+            this.AuthorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AuthorLabel.Location = new System.Drawing.Point(36, 69);
             this.AuthorLabel.Name = "AuthorLabel";
-            this.AuthorLabel.Size = new System.Drawing.Size(62, 18);
+            this.AuthorLabel.Size = new System.Drawing.Size(75, 22);
             this.AuthorLabel.TabIndex = 5;
             this.AuthorLabel.Text = "Author:";
             // 
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
+            this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NameLabel.Location = new System.Drawing.Point(36, 28);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(45, 18);
+            this.NameLabel.Size = new System.Drawing.Size(56, 22);
             this.NameLabel.TabIndex = 4;
             this.NameLabel.Text = "Title:";
             // 
@@ -164,7 +167,7 @@
             // 
             // TextBoxAuthor
             // 
-            this.TextBoxAuthor.Location = new System.Drawing.Point(126, 63);
+            this.TextBoxAuthor.Location = new System.Drawing.Point(126, 66);
             this.TextBoxAuthor.Name = "TextBoxAuthor";
             this.TextBoxAuthor.Size = new System.Drawing.Size(188, 24);
             this.TextBoxAuthor.TabIndex = 1;
@@ -193,7 +196,7 @@
             this.PersonalPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PersonalPage.Name = "PersonalPage";
             this.PersonalPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.PersonalPage.Size = new System.Drawing.Size(474, 413);
+            this.PersonalPage.Size = new System.Drawing.Size(474, 327);
             this.PersonalPage.TabIndex = 1;
             this.PersonalPage.Text = "Personal";
             this.PersonalPage.UseVisualStyleBackColor = true;
@@ -228,9 +231,10 @@
             // BindingLabel
             // 
             this.BindingLabel.AutoSize = true;
+            this.BindingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BindingLabel.Location = new System.Drawing.Point(23, 163);
             this.BindingLabel.Name = "BindingLabel";
-            this.BindingLabel.Size = new System.Drawing.Size(78, 20);
+            this.BindingLabel.Size = new System.Drawing.Size(83, 22);
             this.BindingLabel.TabIndex = 7;
             this.BindingLabel.Text = "Binding:";
             // 
@@ -263,9 +267,10 @@
             // BookFormatLabel
             // 
             this.BookFormatLabel.AutoSize = true;
+            this.BookFormatLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BookFormatLabel.Location = new System.Drawing.Point(23, 85);
             this.BookFormatLabel.Name = "BookFormatLabel";
-            this.BookFormatLabel.Size = new System.Drawing.Size(80, 20);
+            this.BookFormatLabel.Size = new System.Drawing.Size(84, 22);
             this.BookFormatLabel.TabIndex = 4;
             this.BookFormatLabel.Text = "Format: ";
             // 
@@ -289,18 +294,20 @@
             // PageAmountLabel
             // 
             this.PageAmountLabel.AutoSize = true;
+            this.PageAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PageAmountLabel.Location = new System.Drawing.Point(23, 262);
             this.PageAmountLabel.Name = "PageAmountLabel";
-            this.PageAmountLabel.Size = new System.Drawing.Size(135, 20);
+            this.PageAmountLabel.Size = new System.Drawing.Size(145, 22);
             this.PageAmountLabel.TabIndex = 2;
             this.PageAmountLabel.Text = "Page quantity: ";
             // 
             // ColorLabel
             // 
             this.ColorLabel.AutoSize = true;
+            this.ColorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ColorLabel.Location = new System.Drawing.Point(23, 26);
             this.ColorLabel.Name = "ColorLabel";
-            this.ColorLabel.Size = new System.Drawing.Size(105, 20);
+            this.ColorLabel.Size = new System.Drawing.Size(111, 22);
             this.ColorLabel.TabIndex = 1;
             this.ColorLabel.Text = "Book color:";
             // 
@@ -326,14 +333,14 @@
             this.CustomPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CustomPage.Name = "CustomPage";
             this.CustomPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.CustomPage.Size = new System.Drawing.Size(474, 413);
+            this.CustomPage.Size = new System.Drawing.Size(474, 327);
             this.CustomPage.TabIndex = 2;
             this.CustomPage.Text = "Custom";
             this.CustomPage.UseVisualStyleBackColor = true;
             // 
             // PriceTextBox
             // 
-            this.PriceTextBox.Location = new System.Drawing.Point(119, 42);
+            this.PriceTextBox.Location = new System.Drawing.Point(140, 42);
             this.PriceTextBox.Name = "PriceTextBox";
             this.PriceTextBox.Size = new System.Drawing.Size(93, 24);
             this.PriceTextBox.TabIndex = 7;
@@ -341,17 +348,19 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(119, 111);
+            this.maskedTextBox1.Location = new System.Drawing.Point(140, 111);
             this.maskedTextBox1.Mask = "00,000 kg";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(93, 24);
             this.maskedTextBox1.TabIndex = 6;
+            this.maskedTextBox1.Text = "00000";
+            this.maskedTextBox1.Enter += new System.EventHandler(this.maskedTextBox1_Enter);
             // 
             // ReleaseDatePicker
             // 
             this.ReleaseDatePicker.CustomFormat = "yyyy";
             this.ReleaseDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ReleaseDatePicker.Location = new System.Drawing.Point(119, 76);
+            this.ReleaseDatePicker.Location = new System.Drawing.Point(140, 76);
             this.ReleaseDatePicker.Name = "ReleaseDatePicker";
             this.ReleaseDatePicker.Size = new System.Drawing.Size(68, 24);
             this.ReleaseDatePicker.TabIndex = 3;
@@ -359,27 +368,30 @@
             // WeightLabel
             // 
             this.WeightLabel.AutoSize = true;
+            this.WeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.WeightLabel.Location = new System.Drawing.Point(36, 114);
             this.WeightLabel.Name = "WeightLabel";
-            this.WeightLabel.Size = new System.Drawing.Size(60, 18);
+            this.WeightLabel.Size = new System.Drawing.Size(72, 22);
             this.WeightLabel.TabIndex = 2;
             this.WeightLabel.Text = "Weight";
             // 
             // DateLabel
             // 
             this.DateLabel.AutoSize = true;
+            this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DateLabel.Location = new System.Drawing.Point(22, 78);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(88, 18);
+            this.DateLabel.Size = new System.Drawing.Size(106, 22);
             this.DateLabel.TabIndex = 1;
             this.DateLabel.Text = "Released: ";
             // 
             // PriceLabel
             // 
             this.PriceLabel.AutoSize = true;
+            this.PriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PriceLabel.Location = new System.Drawing.Point(38, 42);
             this.PriceLabel.Name = "PriceLabel";
-            this.PriceLabel.Size = new System.Drawing.Size(57, 18);
+            this.PriceLabel.Size = new System.Drawing.Size(68, 22);
             this.PriceLabel.TabIndex = 0;
             this.PriceLabel.Text = "Price: ";
             // 
@@ -387,7 +399,7 @@
             // 
             this.SaveButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SaveButton.Location = new System.Drawing.Point(138, 515);
+            this.SaveButton.Location = new System.Drawing.Point(137, 433);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(115, 29);
@@ -400,7 +412,7 @@
             // 
             this.LoadButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.LoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoadButton.Location = new System.Drawing.Point(261, 515);
+            this.LoadButton.Location = new System.Drawing.Point(260, 433);
             this.LoadButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.LoadButton.Name = "LoadButton";
             this.LoadButton.Size = new System.Drawing.Size(115, 28);
@@ -453,6 +465,7 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -471,12 +484,13 @@
             this.programToolStripMenuItem.Name = "programToolStripMenuItem";
             this.programToolStripMenuItem.Size = new System.Drawing.Size(66, 25);
             this.programToolStripMenuItem.Text = "About";
+            this.programToolStripMenuItem.Click += new System.EventHandler(this.programToolStripMenuItem_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 561);
+            this.ClientSize = new System.Drawing.Size(512, 476);
             this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.TabControlBooks);

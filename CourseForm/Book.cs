@@ -13,17 +13,17 @@ namespace CourseForm
         public string Author { get; set; }
         public string Genre { get; set; }
 
-        public Color Color { get; set; } = Color.Black;
+        public Color Color { get; set; }
 
-        public string Binding { get; set; } = "";
+        public string Binding { get; set; } 
 
-        public string Format { get; set; } = "";
+        public string Format { get; set; } 
 
-        public int? PageAmount { get; set; } = 0;
+        public int PageAmount { get; set; } 
 
-        public int Price { get; set; } = 0;
-        public DateTime? Data {  get; set; }
+        public int Price { get; set; }
+        public DateTime Data {  get; set; }
 
-        public float? Weight { get; set; } = 0;
+        public string Weight { get; set; }
     }
 }

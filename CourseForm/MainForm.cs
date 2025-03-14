@@ -68,11 +68,8 @@ namespace CourseForm
             }
         }
 
-        private void PriceTextBox_KeyPress(object sender, KeyPressEventArgs e) // no letters
-        {
-            if(char.IsLetter(e.KeyChar))e.Handled = true;
-            if(e.KeyChar == '.' && PriceTextBox.Text.Contains('.'))e.Handled =true;
-        }
+        private void PriceTextBox_KeyPress(object sender, KeyPressEventArgs e) => e.Handled = char.IsLetter(e.KeyChar) ? true: false;
+        
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
@@ -81,14 +78,16 @@ namespace CourseForm
             {
                 mybook.Title = TextBoxName.Text;
                 mybook.Author = TextBoxAuthor.Text;
-                mybook.Genre = ComboBoxGenre.SelectedItem.ToString();
+                mybook.Genre = ComboBoxGenre.Text.ToString();
                 mybook.Color = ChooseColorButton.ForeColor;
-                mybook.Format = FormatComboBox.SelectedItem.ToString();
-                mybook.Binding = BookBindingComboBox.SelectedItem.ToString();
+                mybook.Format = FormatComboBox.Text.ToString();
+                mybook.Binding = BookBindingComboBox.Text.ToString();
                 mybook.PageAmount = Convert.ToInt32(PageNumeric.Value);
                 mybook.Data = ReleaseDatePicker.Value;
+
+                if(PriceTextBox.Text != "")
                 mybook.Price = Convert.ToInt32(PriceTextBox.Text);
-                mybook.Weight = Convert.ToSingle(maskedTextBox1.Text.Remove(6,3)); 
+                mybook.Weight = maskedTextBox1.Text.Remove(6, 3); 
 
                 saving = JsonConvert.SerializeObject(mybook, Formatting.Indented);
                 File.WriteAllText(saver.FileName,saving );
@@ -117,5 +116,10 @@ namespace CourseForm
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e) => SaveButton_Click(sender, e);
         private void loadToolStripMenuItem_Click(object sender, EventArgs e) => LoadButton_Click(sender, e);
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e) => new AboutProgram().Show();
+        private void programToolStripMenuItem_Click(object sender, EventArgs e) => new AboutProgram().Show();
+
+        private void maskedTextBox1_Enter(object sender, EventArgs e) => maskedTextBox1.Clear();
     }
 }
