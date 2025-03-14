@@ -389,7 +389,7 @@
             this.SaveButton.TabIndex = 1;
             this.SaveButton.Text = "save";
             this.SaveButton.UseVisualStyleBackColor = true;
-            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+          
             // 
             // LoadButton
             // 

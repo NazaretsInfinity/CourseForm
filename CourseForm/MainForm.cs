@@ -20,16 +20,12 @@ namespace CourseForm
             book_color = new ColorDialog();
            
         }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => this.Close();
 
         private void ChooseColor_Click(object sender, EventArgs e)
         {
             if (book_color.ShowDialog() == DialogResult.OK)
                 ChooseColorButton.ForeColor = book_color.Color;
-        }
-
-        private void SaveButton_Click(object sender, EventArgs e)
-        {
-
         }
 
 
@@ -42,7 +38,6 @@ namespace CourseForm
                 ComboBoxGenre.SelectedItem = (ComboBoxGenre.Items[ComboBoxGenre.Items.Count - 1]);
             }
         }
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => this.Close();
 
         private void OwnFormatButton_Click(object sender, EventArgs e)
         {
