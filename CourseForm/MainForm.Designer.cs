@@ -389,7 +389,7 @@
             this.SaveButton.TabIndex = 1;
             this.SaveButton.Text = "save";
             this.SaveButton.UseVisualStyleBackColor = true;
-          
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // LoadButton
             // 
@@ -402,6 +402,7 @@
             this.LoadButton.TabIndex = 2;
             this.LoadButton.Text = "load";
             this.LoadButton.UseVisualStyleBackColor = true;
+            this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
             // 
             // MainMenuStrip
             // 
@@ -437,8 +438,9 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
