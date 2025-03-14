@@ -57,7 +57,7 @@ namespace CourseForm
         private void OwnBindingButton_Click(object sender, EventArgs e)
         {
             InputOwnForm yourbinding = new InputOwnForm();
-            yourbinding.ChoiceLabel.Text = "new binding:";
+            yourbinding.ChoiceLabel.Text = "new binding: ";
             if (yourbinding.ShowDialog() == DialogResult.OK)
             {
                 BookBindingComboBox.Items.Add(yourbinding.Choice);
@@ -67,8 +67,9 @@ namespace CourseForm
 
         private void PriceTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!(char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar)))e.Handled = true;
+            if(char.IsLetter(e.KeyChar))e.Handled = true;
             if(e.KeyChar == '.' && PriceTextBox.Text.Contains('.'))e.Handled =true;
         }
+
     }
 }

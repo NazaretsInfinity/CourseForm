@@ -84,7 +84,7 @@
             this.TabControlBooks.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TabControlBooks.Name = "TabControlBooks";
             this.TabControlBooks.SelectedIndex = 0;
-            this.TabControlBooks.Size = new System.Drawing.Size(484, 384);
+            this.TabControlBooks.Size = new System.Drawing.Size(482, 444);
             this.TabControlBooks.TabIndex = 0;
             // 
             // GeneralPage
@@ -100,7 +100,7 @@
             this.GeneralPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.GeneralPage.Name = "GeneralPage";
             this.GeneralPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.GeneralPage.Size = new System.Drawing.Size(476, 353);
+            this.GeneralPage.Size = new System.Drawing.Size(474, 413);
             this.GeneralPage.TabIndex = 0;
             this.GeneralPage.Text = "General";
             this.GeneralPage.UseVisualStyleBackColor = true;
@@ -108,7 +108,7 @@
             // GenreLabel
             // 
             this.GenreLabel.AutoSize = true;
-            this.GenreLabel.Location = new System.Drawing.Point(29, 142);
+            this.GenreLabel.Location = new System.Drawing.Point(36, 111);
             this.GenreLabel.Name = "GenreLabel";
             this.GenreLabel.Size = new System.Drawing.Size(59, 18);
             this.GenreLabel.TabIndex = 6;
@@ -117,7 +117,7 @@
             // AuthorLabel
             // 
             this.AuthorLabel.AutoSize = true;
-            this.AuthorLabel.Location = new System.Drawing.Point(27, 85);
+            this.AuthorLabel.Location = new System.Drawing.Point(36, 66);
             this.AuthorLabel.Name = "AuthorLabel";
             this.AuthorLabel.Size = new System.Drawing.Size(62, 18);
             this.AuthorLabel.TabIndex = 5;
@@ -135,7 +135,7 @@
             // PersonalGenreButton
             // 
             this.PersonalGenreButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PersonalGenreButton.Location = new System.Drawing.Point(126, 171);
+            this.PersonalGenreButton.Location = new System.Drawing.Point(126, 139);
             this.PersonalGenreButton.Name = "PersonalGenreButton";
             this.PersonalGenreButton.Size = new System.Drawing.Size(188, 26);
             this.PersonalGenreButton.TabIndex = 3;
@@ -147,7 +147,6 @@
             // 
             this.ComboBoxGenre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxGenre.FormattingEnabled = true;
-            this.ComboBoxGenre.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ComboBoxGenre.Items.AddRange(new object[] {
             "novel",
             "detective",
@@ -158,14 +157,14 @@
             "comedy",
             "scince-fiction(sci-fi)",
             "historical novel "});
-            this.ComboBoxGenre.Location = new System.Drawing.Point(126, 139);
+            this.ComboBoxGenre.Location = new System.Drawing.Point(126, 107);
             this.ComboBoxGenre.Name = "ComboBoxGenre";
             this.ComboBoxGenre.Size = new System.Drawing.Size(188, 26);
             this.ComboBoxGenre.TabIndex = 2;
             // 
             // TextBoxAuthor
             // 
-            this.TextBoxAuthor.Location = new System.Drawing.Point(126, 82);
+            this.TextBoxAuthor.Location = new System.Drawing.Point(126, 63);
             this.TextBoxAuthor.Name = "TextBoxAuthor";
             this.TextBoxAuthor.Size = new System.Drawing.Size(188, 24);
             this.TextBoxAuthor.TabIndex = 1;
@@ -194,7 +193,7 @@
             this.PersonalPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PersonalPage.Name = "PersonalPage";
             this.PersonalPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.PersonalPage.Size = new System.Drawing.Size(476, 353);
+            this.PersonalPage.Size = new System.Drawing.Size(474, 413);
             this.PersonalPage.TabIndex = 1;
             this.PersonalPage.Text = "Personal";
             this.PersonalPage.UseVisualStyleBackColor = true;
@@ -322,7 +321,7 @@
             this.CustomPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CustomPage.Name = "CustomPage";
             this.CustomPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.CustomPage.Size = new System.Drawing.Size(476, 353);
+            this.CustomPage.Size = new System.Drawing.Size(474, 413);
             this.CustomPage.TabIndex = 2;
             this.CustomPage.Text = "Custom";
             this.CustomPage.UseVisualStyleBackColor = true;
@@ -383,7 +382,7 @@
             // 
             this.SaveButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SaveButton.Location = new System.Drawing.Point(140, 459);
+            this.SaveButton.Location = new System.Drawing.Point(138, 515);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(115, 29);
@@ -396,7 +395,7 @@
             // 
             this.LoadButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.LoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoadButton.Location = new System.Drawing.Point(263, 459);
+            this.LoadButton.Location = new System.Drawing.Point(261, 515);
             this.LoadButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.LoadButton.Name = "LoadButton";
             this.LoadButton.Size = new System.Drawing.Size(115, 28);
@@ -469,7 +468,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 506);
+            this.ClientSize = new System.Drawing.Size(512, 561);
             this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.TabControlBooks);
