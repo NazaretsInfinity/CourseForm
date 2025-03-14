@@ -34,19 +34,21 @@
             // TextLabel
             // 
             this.TextLabel.AutoSize = true;
+            this.TextLabel.BackColor = System.Drawing.Color.Linen;
             this.TextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextLabel.Location = new System.Drawing.Point(12, 36);
+            this.TextLabel.ForeColor = System.Drawing.Color.DimGray;
+            this.TextLabel.Location = new System.Drawing.Point(12, 35);
             this.TextLabel.Name = "TextLabel";
             this.TextLabel.Size = new System.Drawing.Size(550, 120);
             this.TextLabel.TabIndex = 0;
-            this.TextLabel.Text = "Welcome, beauty cutie. Do not be bashful.\r\n\r\nTitle, Author and Genre are necessit" +
-    "ies. The rest of parameters \r\nyou may leave untouched.\r\n\r\n\r\n";
+            this.TextLabel.Text = "Welcome abroad, beauty cutie. Do not be bashful.\r\n\r\nTitle, Author and Genre are n" +
+    "ecessities. The rest of parameters \r\nyou may leave untouched.\r\n\r\n\r\n";
             // 
             // AboutProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CourseForm.Properties.Resources.Abel;
+            this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(820, 191);
             this.Controls.Add(this.TextLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

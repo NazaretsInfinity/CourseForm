@@ -89,7 +89,7 @@
             // 
             // GeneralPage
             // 
-            this.GeneralPage.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.GeneralPage.BackColor = System.Drawing.Color.Snow;
             this.GeneralPage.Controls.Add(this.GenreLabel);
             this.GeneralPage.Controls.Add(this.AuthorLabel);
             this.GeneralPage.Controls.Add(this.NameLabel);
@@ -181,7 +181,7 @@
             // 
             // PersonalPage
             // 
-            this.PersonalPage.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.PersonalPage.BackColor = System.Drawing.Color.Snow;
             this.PersonalPage.Controls.Add(this.OwnBindingButton);
             this.PersonalPage.Controls.Add(this.BookBindingComboBox);
             this.PersonalPage.Controls.Add(this.BindingLabel);
@@ -323,7 +323,7 @@
             // 
             // CustomPage
             // 
-            this.CustomPage.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.CustomPage.BackColor = System.Drawing.Color.Snow;
             this.CustomPage.Controls.Add(this.PriceTextBox);
             this.CustomPage.Controls.Add(this.maskedTextBox1);
             this.CustomPage.Controls.Add(this.ReleaseDatePicker);
@@ -436,6 +436,7 @@
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.BackColor = System.Drawing.Color.RosyBrown;
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadToolStripMenuItem,
             this.saveToolStripMenuItem,
@@ -449,38 +450,39 @@
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(125, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // programToolStripMenuItem
             // 
+            this.programToolStripMenuItem.BackColor = System.Drawing.Color.RosyBrown;
             this.programToolStripMenuItem.Name = "programToolStripMenuItem";
             this.programToolStripMenuItem.Size = new System.Drawing.Size(66, 25);
             this.programToolStripMenuItem.Text = "About";
@@ -490,7 +492,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(512, 476);
             this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.SaveButton);
