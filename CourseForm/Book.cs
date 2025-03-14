@@ -22,7 +22,7 @@ namespace CourseForm
         public int? PageAmount { get; set; }
 
         public int? Price { get; set; }
-        public DateTime? Data {  get; set; }
+        public DateTime Data {  get; set; }
 
         public float? Weight { get; set; }
     }

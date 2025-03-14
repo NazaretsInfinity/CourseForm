@@ -15,18 +15,17 @@ namespace CourseForm
 {
     public partial class MainForm : Form
     {
-        ColorDialog book_color;
+        ColorDialog book_color = new ColorDialog();
         Book mybook = new Book();
 
-        SaveFileDialog saver;
+        SaveFileDialog saver = new SaveFileDialog();
+        OpenFileDialog opener = new OpenFileDialog();
  
         
         public MainForm()
         {
             InitializeComponent();
-            book_color = new ColorDialog();
-            saver = new SaveFileDialog();
-            saver.Filter = "JSON Files (*.json)|*.json";
+            saver.Filter = opener.Filter = "JSON Files (*.json)|*.json";
 
         }
         private void exitToolStripMenuItem_Click(object sender, EventArgs e) => this.Close();
@@ -88,6 +87,7 @@ namespace CourseForm
                 mybook.Binding = BookBindingComboBox.SelectedItem.ToString();
                 mybook.PageAmount = Convert.ToInt32(PageNumeric.Value);
                 mybook.Data = ReleaseDatePicker.Value;
+                mybook.Price = Convert.ToInt32(PriceTextBox.Text);
                 mybook.Weight = Convert.ToSingle(maskedTextBox1.Text.Remove(6,3)); 
 
                 saving = JsonConvert.SerializeObject(mybook, Formatting.Indented);
@@ -96,11 +96,26 @@ namespace CourseForm
 
         }
 
-
         private void LoadButton_Click(object sender, EventArgs e)
         {
-
+            if(opener.ShowDialog() == DialogResult.OK  & opener.FileName != "")
+            {
+               string json = File.ReadAllText(opener.FileName);
+               Book book = JsonConvert.DeserializeObject<Book>(json);
+                TextBoxName.Text = book.Title;
+                TextBoxAuthor.Text = book.Author;
+                ComboBoxGenre.Text = book.Genre;
+                ChooseColorButton.ForeColor = book.Color;
+                FormatComboBox.Text = book.Format;
+                BookBindingComboBox.Text = book.Binding;
+                PageNumeric.Value = Convert.ToDecimal(book.PageAmount);
+                ReleaseDatePicker.Value = book.Data;
+                PriceTextBox.Text = book.Price.ToString();
+                maskedTextBox1.Text = $"{book.Weight}";
+            }
         }
+
         private void saveToolStripMenuItem_Click(object sender, EventArgs e) => SaveButton_Click(sender, e);
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e) => LoadButton_Click(sender, e);
     }
 }
