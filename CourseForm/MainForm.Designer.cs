@@ -89,7 +89,7 @@
             // 
             // GeneralPage
             // 
-            this.GeneralPage.BackColor = System.Drawing.Color.Snow;
+            this.GeneralPage.BackColor = System.Drawing.Color.White;
             this.GeneralPage.Controls.Add(this.GenreLabel);
             this.GeneralPage.Controls.Add(this.AuthorLabel);
             this.GeneralPage.Controls.Add(this.NameLabel);
@@ -109,7 +109,7 @@
             // 
             this.GenreLabel.AutoSize = true;
             this.GenreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GenreLabel.Location = new System.Drawing.Point(36, 110);
+            this.GenreLabel.Location = new System.Drawing.Point(36, 163);
             this.GenreLabel.Name = "GenreLabel";
             this.GenreLabel.Size = new System.Drawing.Size(71, 22);
             this.GenreLabel.TabIndex = 6;
@@ -119,7 +119,7 @@
             // 
             this.AuthorLabel.AutoSize = true;
             this.AuthorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AuthorLabel.Location = new System.Drawing.Point(36, 69);
+            this.AuthorLabel.Location = new System.Drawing.Point(36, 85);
             this.AuthorLabel.Name = "AuthorLabel";
             this.AuthorLabel.Size = new System.Drawing.Size(75, 22);
             this.AuthorLabel.TabIndex = 5;
@@ -129,7 +129,7 @@
             // 
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameLabel.Location = new System.Drawing.Point(36, 28);
+            this.NameLabel.Location = new System.Drawing.Point(36, 26);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(56, 22);
             this.NameLabel.TabIndex = 4;
@@ -138,7 +138,7 @@
             // PersonalGenreButton
             // 
             this.PersonalGenreButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PersonalGenreButton.Location = new System.Drawing.Point(126, 139);
+            this.PersonalGenreButton.Location = new System.Drawing.Point(126, 195);
             this.PersonalGenreButton.Name = "PersonalGenreButton";
             this.PersonalGenreButton.Size = new System.Drawing.Size(188, 26);
             this.PersonalGenreButton.TabIndex = 3;
@@ -160,14 +160,14 @@
             "comedy",
             "scince-fiction(sci-fi)",
             "historical novel "});
-            this.ComboBoxGenre.Location = new System.Drawing.Point(126, 107);
+            this.ComboBoxGenre.Location = new System.Drawing.Point(126, 163);
             this.ComboBoxGenre.Name = "ComboBoxGenre";
             this.ComboBoxGenre.Size = new System.Drawing.Size(188, 26);
             this.ComboBoxGenre.TabIndex = 2;
             // 
             // TextBoxAuthor
             // 
-            this.TextBoxAuthor.Location = new System.Drawing.Point(126, 66);
+            this.TextBoxAuthor.Location = new System.Drawing.Point(126, 85);
             this.TextBoxAuthor.Name = "TextBoxAuthor";
             this.TextBoxAuthor.Size = new System.Drawing.Size(188, 24);
             this.TextBoxAuthor.TabIndex = 1;
@@ -181,7 +181,7 @@
             // 
             // PersonalPage
             // 
-            this.PersonalPage.BackColor = System.Drawing.Color.Snow;
+            this.PersonalPage.BackColor = System.Drawing.Color.White;
             this.PersonalPage.Controls.Add(this.OwnBindingButton);
             this.PersonalPage.Controls.Add(this.BookBindingComboBox);
             this.PersonalPage.Controls.Add(this.BindingLabel);
@@ -197,7 +197,7 @@
             this.PersonalPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PersonalPage.Name = "PersonalPage";
             this.PersonalPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.PersonalPage.Size = new System.Drawing.Size(474, 327);
+            this.PersonalPage.Size = new System.Drawing.Size(323, 327);
             this.PersonalPage.TabIndex = 1;
             this.PersonalPage.Text = "Personal";
             // 
@@ -323,7 +323,7 @@
             // 
             // CustomPage
             // 
-            this.CustomPage.BackColor = System.Drawing.Color.Snow;
+            this.CustomPage.BackColor = System.Drawing.Color.White;
             this.CustomPage.Controls.Add(this.PriceTextBox);
             this.CustomPage.Controls.Add(this.maskedTextBox1);
             this.CustomPage.Controls.Add(this.ReleaseDatePicker);
@@ -334,13 +334,13 @@
             this.CustomPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CustomPage.Name = "CustomPage";
             this.CustomPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.CustomPage.Size = new System.Drawing.Size(474, 327);
+            this.CustomPage.Size = new System.Drawing.Size(323, 327);
             this.CustomPage.TabIndex = 2;
             this.CustomPage.Text = "Custom";
             // 
             // PriceTextBox
             // 
-            this.PriceTextBox.Location = new System.Drawing.Point(140, 42);
+            this.PriceTextBox.Location = new System.Drawing.Point(140, 26);
             this.PriceTextBox.Name = "PriceTextBox";
             this.PriceTextBox.Size = new System.Drawing.Size(93, 24);
             this.PriceTextBox.TabIndex = 7;
@@ -348,7 +348,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(140, 111);
+            this.maskedTextBox1.Location = new System.Drawing.Point(140, 161);
             this.maskedTextBox1.Mask = "00,000 kg";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(93, 24);
@@ -360,7 +360,7 @@
             // 
             this.ReleaseDatePicker.CustomFormat = "yyyy";
             this.ReleaseDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ReleaseDatePicker.Location = new System.Drawing.Point(140, 76);
+            this.ReleaseDatePicker.Location = new System.Drawing.Point(140, 85);
             this.ReleaseDatePicker.Name = "ReleaseDatePicker";
             this.ReleaseDatePicker.Size = new System.Drawing.Size(68, 24);
             this.ReleaseDatePicker.TabIndex = 3;
@@ -369,7 +369,7 @@
             // 
             this.WeightLabel.AutoSize = true;
             this.WeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.WeightLabel.Location = new System.Drawing.Point(36, 114);
+            this.WeightLabel.Location = new System.Drawing.Point(36, 163);
             this.WeightLabel.Name = "WeightLabel";
             this.WeightLabel.Size = new System.Drawing.Size(72, 22);
             this.WeightLabel.TabIndex = 2;
@@ -379,7 +379,7 @@
             // 
             this.DateLabel.AutoSize = true;
             this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DateLabel.Location = new System.Drawing.Point(22, 78);
+            this.DateLabel.Location = new System.Drawing.Point(36, 85);
             this.DateLabel.Name = "DateLabel";
             this.DateLabel.Size = new System.Drawing.Size(106, 22);
             this.DateLabel.TabIndex = 1;
@@ -389,7 +389,7 @@
             // 
             this.PriceLabel.AutoSize = true;
             this.PriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PriceLabel.Location = new System.Drawing.Point(38, 42);
+            this.PriceLabel.Location = new System.Drawing.Point(36, 26);
             this.PriceLabel.Name = "PriceLabel";
             this.PriceLabel.Size = new System.Drawing.Size(68, 22);
             this.PriceLabel.TabIndex = 0;
@@ -436,7 +436,7 @@
             // 
             // fileToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.BackColor = System.Drawing.Color.RosyBrown;
+            this.fileToolStripMenuItem.BackColor = System.Drawing.Color.Silver;
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadToolStripMenuItem,
             this.saveToolStripMenuItem,
@@ -450,39 +450,39 @@
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(125, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // programToolStripMenuItem
             // 
-            this.programToolStripMenuItem.BackColor = System.Drawing.Color.RosyBrown;
+            this.programToolStripMenuItem.BackColor = System.Drawing.Color.Silver;
             this.programToolStripMenuItem.Name = "programToolStripMenuItem";
             this.programToolStripMenuItem.Size = new System.Drawing.Size(66, 25);
             this.programToolStripMenuItem.Text = "About";
@@ -492,7 +492,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(512, 476);
             this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.SaveButton);
