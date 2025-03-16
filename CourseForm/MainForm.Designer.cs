@@ -84,7 +84,7 @@
             this.TabControlBooks.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TabControlBooks.Name = "TabControlBooks";
             this.TabControlBooks.SelectedIndex = 0;
-            this.TabControlBooks.Size = new System.Drawing.Size(482, 358);
+            this.TabControlBooks.Size = new System.Drawing.Size(377, 358);
             this.TabControlBooks.TabIndex = 0;
             // 
             // GeneralPage
@@ -101,7 +101,7 @@
             this.GeneralPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.GeneralPage.Name = "GeneralPage";
             this.GeneralPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.GeneralPage.Size = new System.Drawing.Size(474, 327);
+            this.GeneralPage.Size = new System.Drawing.Size(369, 327);
             this.GeneralPage.TabIndex = 0;
             this.GeneralPage.Text = "General";
             // 
@@ -197,7 +197,7 @@
             this.PersonalPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PersonalPage.Name = "PersonalPage";
             this.PersonalPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.PersonalPage.Size = new System.Drawing.Size(323, 327);
+            this.PersonalPage.Size = new System.Drawing.Size(369, 327);
             this.PersonalPage.TabIndex = 1;
             this.PersonalPage.Text = "Personal";
             // 
@@ -334,7 +334,7 @@
             this.CustomPage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CustomPage.Name = "CustomPage";
             this.CustomPage.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.CustomPage.Size = new System.Drawing.Size(323, 327);
+            this.CustomPage.Size = new System.Drawing.Size(369, 327);
             this.CustomPage.TabIndex = 2;
             this.CustomPage.Text = "Custom";
             // 
@@ -399,7 +399,7 @@
             // 
             this.SaveButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SaveButton.Location = new System.Drawing.Point(137, 433);
+            this.SaveButton.Location = new System.Drawing.Point(76, 433);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(115, 29);
@@ -412,7 +412,7 @@
             // 
             this.LoadButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.LoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoadButton.Location = new System.Drawing.Point(260, 433);
+            this.LoadButton.Location = new System.Drawing.Point(199, 433);
             this.LoadButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.LoadButton.Name = "LoadButton";
             this.LoadButton.Size = new System.Drawing.Size(115, 28);
@@ -430,7 +430,7 @@
             this.MainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MainMenuStrip.Name = "MainMenuStrip";
             this.MainMenuStrip.Padding = new System.Windows.Forms.Padding(10, 2, 0, 2);
-            this.MainMenuStrip.Size = new System.Drawing.Size(512, 29);
+            this.MainMenuStrip.Size = new System.Drawing.Size(405, 29);
             this.MainMenuStrip.TabIndex = 3;
             this.MainMenuStrip.Text = "menuStrip1";
             // 
@@ -493,7 +493,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(512, 476);
+            this.ClientSize = new System.Drawing.Size(405, 476);
             this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.TabControlBooks);
