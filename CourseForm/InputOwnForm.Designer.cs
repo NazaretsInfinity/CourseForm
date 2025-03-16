@@ -37,9 +37,9 @@
             // 
             this.OKButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.OKButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.OKButton.Location = new System.Drawing.Point(245, 49);
+            this.OKButton.Location = new System.Drawing.Point(275, 40);
             this.OKButton.Name = "OKButton";
-            this.OKButton.Size = new System.Drawing.Size(120, 38);
+            this.OKButton.Size = new System.Drawing.Size(90, 30);
             this.OKButton.TabIndex = 0;
             this.OKButton.Text = "OK";
             this.OKButton.UseVisualStyleBackColor = true;
@@ -47,9 +47,9 @@
             // 
             // ChoiceTextBox
             // 
-            this.ChoiceTextBox.Location = new System.Drawing.Point(164, 12);
+            this.ChoiceTextBox.Location = new System.Drawing.Point(142, 12);
             this.ChoiceTextBox.Name = "ChoiceTextBox";
-            this.ChoiceTextBox.Size = new System.Drawing.Size(201, 22);
+            this.ChoiceTextBox.Size = new System.Drawing.Size(223, 22);
             this.ChoiceTextBox.TabIndex = 1;
             this.ChoiceTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -70,8 +70,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(384, 101);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(384, 74);
             this.Controls.Add(this.ChoiceLabel);
             this.Controls.Add(this.ChoiceTextBox);
             this.Controls.Add(this.OKButton);

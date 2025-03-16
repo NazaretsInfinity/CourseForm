@@ -34,7 +34,7 @@
             // TextLabel
             // 
             this.TextLabel.AutoSize = true;
-            this.TextLabel.BackColor = System.Drawing.Color.Linen;
+            this.TextLabel.BackColor = System.Drawing.Color.White;
             this.TextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TextLabel.ForeColor = System.Drawing.Color.DimGray;
             this.TextLabel.Location = new System.Drawing.Point(12, 35);
@@ -48,7 +48,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.RosyBrown;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(820, 191);
             this.Controls.Add(this.TextLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

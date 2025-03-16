@@ -50,7 +50,6 @@
             this.ChooseColorButton = new System.Windows.Forms.Button();
             this.CustomPage = new System.Windows.Forms.TabPage();
             this.PriceTextBox = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.ReleaseDatePicker = new System.Windows.Forms.DateTimePicker();
             this.WeightLabel = new System.Windows.Forms.Label();
             this.DateLabel = new System.Windows.Forms.Label();
@@ -65,6 +64,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.TabControlBooks.SuspendLayout();
             this.GeneralPage.SuspendLayout();
             this.PersonalPage.SuspendLayout();
@@ -109,7 +109,7 @@
             // 
             this.GenreLabel.AutoSize = true;
             this.GenreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GenreLabel.Location = new System.Drawing.Point(36, 163);
+            this.GenreLabel.Location = new System.Drawing.Point(23, 163);
             this.GenreLabel.Name = "GenreLabel";
             this.GenreLabel.Size = new System.Drawing.Size(71, 22);
             this.GenreLabel.TabIndex = 6;
@@ -119,7 +119,7 @@
             // 
             this.AuthorLabel.AutoSize = true;
             this.AuthorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AuthorLabel.Location = new System.Drawing.Point(36, 85);
+            this.AuthorLabel.Location = new System.Drawing.Point(23, 85);
             this.AuthorLabel.Name = "AuthorLabel";
             this.AuthorLabel.Size = new System.Drawing.Size(75, 22);
             this.AuthorLabel.TabIndex = 5;
@@ -129,7 +129,7 @@
             // 
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameLabel.Location = new System.Drawing.Point(36, 26);
+            this.NameLabel.Location = new System.Drawing.Point(23, 26);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(56, 22);
             this.NameLabel.TabIndex = 4;
@@ -340,27 +340,17 @@
             // 
             // PriceTextBox
             // 
-            this.PriceTextBox.Location = new System.Drawing.Point(140, 26);
+            this.PriceTextBox.Location = new System.Drawing.Point(134, 21);
             this.PriceTextBox.Name = "PriceTextBox";
             this.PriceTextBox.Size = new System.Drawing.Size(93, 24);
             this.PriceTextBox.TabIndex = 7;
             this.PriceTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PriceTextBox_KeyPress);
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(140, 161);
-            this.maskedTextBox1.Mask = "00,000 kg";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(93, 24);
-            this.maskedTextBox1.TabIndex = 6;
-            this.maskedTextBox1.Text = "00000";
-            this.maskedTextBox1.Enter += new System.EventHandler(this.maskedTextBox1_Enter);
-            // 
             // ReleaseDatePicker
             // 
             this.ReleaseDatePicker.CustomFormat = "yyyy";
             this.ReleaseDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ReleaseDatePicker.Location = new System.Drawing.Point(140, 85);
+            this.ReleaseDatePicker.Location = new System.Drawing.Point(134, 81);
             this.ReleaseDatePicker.Name = "ReleaseDatePicker";
             this.ReleaseDatePicker.Size = new System.Drawing.Size(68, 24);
             this.ReleaseDatePicker.TabIndex = 3;
@@ -369,17 +359,17 @@
             // 
             this.WeightLabel.AutoSize = true;
             this.WeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.WeightLabel.Location = new System.Drawing.Point(36, 163);
+            this.WeightLabel.Location = new System.Drawing.Point(23, 163);
             this.WeightLabel.Name = "WeightLabel";
-            this.WeightLabel.Size = new System.Drawing.Size(72, 22);
+            this.WeightLabel.Size = new System.Drawing.Size(84, 22);
             this.WeightLabel.TabIndex = 2;
-            this.WeightLabel.Text = "Weight";
+            this.WeightLabel.Text = "Weight: ";
             // 
             // DateLabel
             // 
             this.DateLabel.AutoSize = true;
             this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DateLabel.Location = new System.Drawing.Point(36, 85);
+            this.DateLabel.Location = new System.Drawing.Point(23, 85);
             this.DateLabel.Name = "DateLabel";
             this.DateLabel.Size = new System.Drawing.Size(106, 22);
             this.DateLabel.TabIndex = 1;
@@ -389,7 +379,7 @@
             // 
             this.PriceLabel.AutoSize = true;
             this.PriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PriceLabel.Location = new System.Drawing.Point(36, 26);
+            this.PriceLabel.Location = new System.Drawing.Point(23, 26);
             this.PriceLabel.Name = "PriceLabel";
             this.PriceLabel.Size = new System.Drawing.Size(68, 22);
             this.PriceLabel.TabIndex = 0;
@@ -488,6 +478,16 @@
             this.programToolStripMenuItem.Text = "About";
             this.programToolStripMenuItem.Click += new System.EventHandler(this.programToolStripMenuItem_Click);
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(134, 161);
+            this.maskedTextBox1.Mask = "00,000 kg";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(93, 24);
+            this.maskedTextBox1.TabIndex = 6;
+            this.maskedTextBox1.Text = "00000";
+            this.maskedTextBox1.Enter += new System.EventHandler(this.maskedTextBox1_Enter);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -554,8 +554,8 @@
         private System.Windows.Forms.DateTimePicker ReleaseDatePicker;
         private System.Windows.Forms.Label WeightLabel;
         private System.Windows.Forms.Label DateLabel;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.TextBox PriceTextBox;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
 

@@ -68,7 +68,7 @@ namespace CourseForm
             }
         }
 
-        private void PriceTextBox_KeyPress(object sender, KeyPressEventArgs e) => e.Handled = char.IsLetter(e.KeyChar) ? true: false;
+        private void PriceTextBox_KeyPress(object sender, KeyPressEventArgs e) => e.Handled = char.IsLetter(e.KeyChar);
         
 
         private void SaveButton_Click(object sender, EventArgs e)
